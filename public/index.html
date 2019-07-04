@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GROCERY APP</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Spirax" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script/main.js"></script>
+</head>
+
+<body ng-app="loginApp" ng-controller="loginCtrl" >
+   <div ng-hide="hidelog">
+    <div class="text-center">
+        <div id="myDIV" ng-hide="hide" ng-hide="!hidelog">
+            <h1><strong>LOGIN PAGE</strong></h1>
+            <h2>EMAIL: <input ng-model="email"><br></h2>
+            <h2>PASSWORD: <input type="password" ng-model="password"></h2>
+            <button ng-click="logIn()" type="button" class="btn btn-primary btn-lg">Log In</button>
+        </div>
+        <div id="submitPage" ng-hide="!hide" class="col-md-12">
+            <div class="col-md-6">manan
+                
+            </div>
+            <div class="col-md-6">xcalibur</div>
+        </div>
+        <div ng-hide="hide">
+            <button ng-click="signUp()" type="button" class="btn btn-primary btn-lg">Sign In</button>
+        </div>
+    </div>
+    </div>
+        <div class="col-md-12 text-center" ng-hide="!hidesignup">
+            <h2>FIRST NAME: <input ng-model="firstName"><br></h2>
+            <h2>LAST NAME: <input ng-model="lastName"><br></h2>
+            <h2>YOUR EMAIL: <input ng-model="newEmail"><br></h2>
+            <h2>PASSSWORD: <input ng-model="newPassword"><br></h2>
+            <button ng-click="create()" type="button" class="btn btn-primary btn-lg">Create</button>
+        </div>
+    </div>
+</body>
+
+</html>
